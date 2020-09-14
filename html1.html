@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/test/html1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="home-banner-container">
+        <div class="hero">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggre="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="$" class="navbar-brand">WebSiteName</a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="#section1">HOME</a></li>
+                            <li><a href="#section2">PERFORMANCES</a></li>
+                            <li><a href="#section3">BAND</a></li>
+                            <li><a href="#section4">TOUR</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Section 4-1</a></li>
+                                    <li><a href="#section42">Section 4-2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form action="" class="navbar-form navbar-right">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href=""><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="section1" class="container-fluid">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button style="color: rgb(51, 64, 180);" type="button" class="toggle-btn" onclick="login()">
+                    Log In
+                </button>
+                <button style="color: white;" type="button" class="toggle-btn " onclick="register()">
+                    Regsiter
+                </button>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-dove"></i>
+                <i class="fab fa-google"></i>
+            </div>
+            <form action="" id="login" class="inputt-group">
+                <div class="input-group a1">
+                    <span class="input-group-addon icon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control inputt-fleld" name="email" placeholder="User Id">
+                </div>
+                <div class="input-group home a1">
+                    <span class="input-group-addon icon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control inputt-fleld" name="password"
+                        placeholder="Enter Password">
+                </div>
+                <div class="checkbox a1">
+                    <label for=""><input type="checkbox"> <span class="ghichus"> Remember Password</span></label>
+                </div>
+                <button type="submit" class="btn submitt-btn">Submit</button>
+            </form>
+            <form action="" id="register" class="inputt-group">
+                <div class="input-group a1">
+                    <span class="input-group-addon icon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control inputt-fleld" name="text" placeholder="User Id">
+                </div>
+                <div class="input-group home a1">
+                    <span class="input-group-addon icon"></i><i class="fab fa-google"></i></span>
+                    <input id="email" type="text" class="form-control inputt-fleld" name="email" placeholder="Email Id">
+                </div>
+                <div class="input-group home a1">
+                    <span class="input-group-addon icon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="password" type="password" class="form-control inputt-fleld" name="password"
+                        placeholder="Password">
+                </div>
+                <div class="checkbox a2">
+                    <label for=""><input type="checkbox"> <span class="ghichus">I agree to the terms &
+                            conditions</span></label>
+                </div>
+                <button type="submit" class="btn submitt-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <!--Ban nhac-->
+    <div id="section2">
+        <div class="page2-2 container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner khunganh" role="listbox">
+                    <div class="item active">
+                        <img style="width: 1900px; height: 700px;"
+                            src="https://cdn.vietnammoi.vn/stores/news_dataimages/ducnv/102018/08/11/1214_3159_a-star-is-born.jpg"
+                            alt="Los Angeles">
+                        <div class="carousel-caption">
+                            <h3>New York</h3>
+                            <p>The atmosphere in New York is lorem ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="width: 1900px; height: 700px;"
+                            src="https://photo2.tinhte.vn/data/attachment-files/2019/07/4705877_tinhte-jazz-history-3.jpg"
+                            alt="Chicago">
+                        <div class="carousel-caption">
+                            <h3>Chicago</h3>
+                            <p>Thank you, Chicago - A night we won't forget.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img style="width: 1900px; height: 700px;"
+                            src="https://kenh14cdn.com/2019/12/23/hoatran-6426-15770459274001138866578.jpg"
+                            alt="New York">
+                        <div class="carousel-caption">
+                            <h3>LA</h3>
+                            <p>Even thoughh the traffic was a mess, we had the best time.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="container text-center">
+        <h3>THE BAND</h3>
+        <p><em>We love music</em></p>
+        <p>We have created a fictional band website. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Name</strong></p><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img style="width: 255px; height: 255px;" class="img-circle person"
+                        src="https://www.designzillas.com/sites/default/files/2019-11/Kristen_0.jpg" alt="Random Name">
+                </a>
+                <div class="collapse" id="demo">
+                    <p>Guitarist and Lead Vocalist</p>
+                    <p>Loves long walks on the beach</p>
+                    <p>Member since 1988</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Name</strong></p><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img style="width: 255px; height: 255px;" class="img-circle person"
+                        src="https://www.designzillas.com/sites/default/files/2020-08/Juan-Sanchez.jpg"
+                        alt="Random Name">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p>Drummer</p>
+                    <p>Loves drummin'</p>
+                    <p>Member since 1988</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Name</strong></p><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img style="width: 255px; height: 255px;" class="img-circle person"
+                        src="https://www.designzillas.com/sites/default/files/2020-08/James-Connolly.jpg"
+                        alt="Random Name">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>Bass player</p>
+                    <p>Loves math</p>
+                    <p>Member since 2005</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- sữa lỗi-->
+    <div id="section4" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">TOUR DATES</h3>
+            <p class="text-center">Lorem ipsum we'll play you some music. <br>
+                Remember to book your tickets!
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">November<span class="badge">3</span></li>
+            </ul>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://i.pinimg.com/originals/c6/0e/b6/c60eb6b536d5e470be752211d1c570cf.jpg"
+                            alt="Paris" style="width:400px ;height:300px">
+                        <p><strong>Paris</strong></p>
+                        <p>Fri. 27 November 2015</p>
+                        <button id="btn1" class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://todata.vn/view-1200x0/at_new-york_ecf27e5a86135f89a85e8eb1742c7c44.jpg"
+                            alt="New York" style="width:400px ;height:300px">
+                        <p><strong>New York</strong></p>
+                        <p>Sat. 28 November 2015</p>
+                        <button id="btn1" class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://i.pinimg.com/originals/b7/f6/7a/b7f67a550f88a5aadefede42b70c6782.jpg"
+                            alt="San Francisco" style="width:400px ;height:300px">
+                        <p><strong>San Francisco</strong></p>
+                        <p>Sun. 29 November 2015</p>
+                        <button id="btn1" class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Chuwa hocj qua-->
+        <!-------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23
+                                    per person</label>
+                                <input type="number" class="form-control" id="psw" placeholder="How many?">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            </div>
+                            <button type="submit" class="btn btn-block">Pay
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-remove"></span> Cancel
+                        </button>
+                        <p>Need <a href="#">help?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--section 4-->
+    <div id="section42" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">TOUR DATES</h3>
+            <p class="text-center">Lorem ipsum we'll play you some music. <br>
+                Remember to book your tickets!
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item">September <span class="">Sold Out!</span></li>
+                <li class="list-group-item">October <span>Sold Out!</span></li>
+                <li class="list-group-item">November<span class="badge">3</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="section41" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">TOUR DATES</h3>
+            <p class="text-center">Lorem ipsum we'll play you some music. <br>
+                Remember to book your tickets!
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item">September Sold Out!</li>
+                <li class="list-group-item">October Sold Out!</li>
+                <li class="list-group-item">November</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Javascript-->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+
+</html>
