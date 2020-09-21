@@ -118,9 +118,15 @@ button{
     margin: 30px auto;
     text-align: center;
 }
+.social-icons .con2{
+  background-color: rgb(11, 113, 230);
+}
+.social-icons .con3{
+  background-color: rgb(230, 110, 11);
+}
 .social-icons i{
     width: 40px;
-    height: 28px;
+    height: 10px;
     font-size: 25px;
     margin: 0 12px;
     box-shadow: 0 0 20px 0 #7f7f7f3d;
@@ -143,7 +149,7 @@ h1{
 }
 /*************************/
 /*******************************/
-/*Pahn 2*/
+/*Pahn 2 section*/
 .page2-1{
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +160,7 @@ h1{
 }
 .page2-2{
   position: relative;
-  background-color: rgb(19, 16, 16);
+  background: linear-gradient(to bottom,white 0%,black 100%);
   overflow: hidden;
 }
 .arrow-animation{
@@ -164,16 +170,17 @@ h1{
   z-index: 3;
 }
 .home-banner-container:after {
-  background:url(https://www.designzillas.com/themes/custom/bedrock/images/grunge-stripe-bottom-black.png) repeat-x bottom left;
+  background:url(https://www.designzillas.com/themes/custom/bedrock/images/grunge-stripe.png) repeat-x bottom left;
   content: " ";
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
   left: 0;
   width: 100%;
   height: 101px;
   display: block;
   z-index: 9;
 }
+
 .container{
   padding: 80px 120px;
 }
@@ -181,7 +188,7 @@ h1{
 /****************************************/
 /*********ĐỘ phón to nhỏ ***************/
 /****************Phana section 3**************************/
-.carousel-inner img{
+.carousel-1 img{
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
   width: 100%;
@@ -190,11 +197,8 @@ h1{
 .carousel-caption h3{
   color: #fff !important;
 }
-@media (max-width:600px){
-  .carousel-caption{
-    display: none;
-  }
-}
+/*********************/
+/***********************************/
 .person{
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -228,17 +232,25 @@ h1{
   border-bottom-left-radius: 0;
 }
 .thumbnail{
-  padding: 0 0 15px 0;
+  padding: 0 0 25px 0;
   border: none;
   border-radius: 0;
+  margin-left: -30px;
+  background: linear-gradient(to right, rgb(192, 138, 138),rgb(75, 73, 73),rgb(198, 212, 212));
+}
+.row-border{
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
 .thumbnail p{
-  margin-top: 15px;
-  color: #555;
+  margin-top: 10px;
+  color:rgb(200, 243, 160);
+  text-shadow: 2px 4px 2px rgb(133, 43, 43);
 }
 #btn1{
   padding: 10px 20px;
-  background-color: #333;
+  background-color: rgb(175, 56, 56);
   color: #f1f1f1;
   border-radius: 0;
   transition: .2s;
@@ -248,5 +260,96 @@ h1{
   background-color: #fff;
   color: #000;
 }
+.dropdown-1{
+  margin-top: -5px;
+  border-color:rgb(89, 146, 179) ;
+  border-width: 2px;
+}
+.dropdown-menu-left li{
+  margin-top: 5px;
+  padding-left: 15px;
+  color: #000;
+}
+.badge-right-1 .span{
+  float: right;
+  margin-top: 10px;
+  width: 50px;
+}
+.badge-right-1 a{
+  text-decoration: none;
+}
 
+.panel-hover .panel-heading:hover{
+  background: linear-gradient(to top left,rgb(22, 21, 21),white,rgb(87, 228, 87));
+  border-color: rgb(164, 227, 230);
+  color: rgb(130, 123, 228);
+}
+/****Phóng to thu nhỏ ----------------------------*/
+@media (max-width:600px){
+  .carousel-caption{
+    display: none;
+  }
+}
+/*section 4*/
+@media only screen and (max-width:768px)
+{
+  .bg-1{
+    font-size: 12px;
+  }
 
+}
+@media only screen and (max-width:992px)
+{
+  .bg-1{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:992px)
+{
+  .canchinh p{
+    margin-left:35px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:768px)
+{
+  .canchinh p{
+    margin-left:0px;
+    font-size: 12px;
+  }
+
+}
+@media only screen and (max-width:768px){
+  .home-banner-container:after{
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (max-width:992px){
+  .home-banner-container:after{
+    margin-bottom: 60px;
+  }
+}
+/*thêm section 3*/
+/*****************/
+
+.thaydoi:hover{
+  color: white;
+  background-color: rgb(118, 139, 233);
+}
+/***********section 41 ***************/
+.a55::before{
+  content: "";
+  clear: both;
+  display: block;
+}
+.video{
+  background-color: white;
+}
+
+.video2{
+  text-align: center;
+  padding:100px 0px 170px 0px;
+}
+.video3{
+  width: 50%;
+}

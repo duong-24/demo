@@ -9,35 +9,54 @@
         <title>Hello, world!</title>
     </head>
     <body> 
-        <div class="container">
-            <form action="" class="form-block">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" name="pwd" class="form-control" id="pwd" placeholder="Enter password">
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox">Remember me</label>
-                </div>
-                <div class="form-group">
-                    <label for="comment">Comment</label>
-                    <textarea placeholder="Comment" class="form-control" name="comment" id="comment" cols="20" rows="2"></textarea>
-                </div>
-                <button type="submit" class="btn btn-info">Submit</button>
-                <br>
-                <div class="checkbox">
-                    <label ><input type="checkbox">option 1</label>
-                </div>
-                <div class="checkbox">
-                    <label ><input type="checkbox">option 2</label>
-                </div>
-                <div class="checkbox disabled">
-                    <label ><input type="checkbox" disabled>option 3</label>
-                </div>
-            </form>
-        </div>
+        <div class="container mt-3">
+            <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@mail.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@greatstuff.com</td>
+                </tr>
+                <tr>
+                  <td>Anja</td>
+                  <td>Ravendale</td>
+                  <td>a_r@test.com</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+          </div>
+          
+          <script>
+          $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+          </script>
     </body>
 </html>
